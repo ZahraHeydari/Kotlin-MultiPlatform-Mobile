@@ -1,0 +1,16 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/zara/Workspace/EmojiHub/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest16562970533155975988.xml:2:13-83
+INJECTED from /Users/zara/Workspace/EmojiHub/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest16562970533155975988.xml:2:13-83
+	package
+		INJECTED from /Users/zara/Workspace/EmojiHub/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest16562970533155975988.xml
+	xmlns:android
+		ADDED from /Users/zara/Workspace/EmojiHub/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest16562970533155975988.xml:2:23-81
+uses-sdk
+INJECTED from /Users/zara/Workspace/EmojiHub/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest16562970533155975988.xml reason: use-sdk injection requested
+INJECTED from /Users/zara/Workspace/EmojiHub/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest16562970533155975988.xml
+INJECTED from /Users/zara/Workspace/EmojiHub/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest16562970533155975988.xml
+	android:targetSdkVersion
+		INJECTED from /Users/zara/Workspace/EmojiHub/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest16562970533155975988.xml
+	android:minSdkVersion
+		INJECTED from /Users/zara/Workspace/EmojiHub/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest16562970533155975988.xml

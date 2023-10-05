@@ -1,0 +1,16 @@
+#Thu Oct 05 17:56:32 IRST 2023
+base.0=/Users/zara/Workspace/EmojiHub/androidApp/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.1=/Users/zara/Workspace/EmojiHub/androidApp/build/intermediates/dex/debug/mergeLibDexDebug/6/classes.dex
+base.2=/Users/zara/Workspace/EmojiHub/androidApp/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.3=/Users/zara/Workspace/EmojiHub/androidApp/build/intermediates/dex/debug/mergeProjectDexDebug/11/classes.dex
+base.4=/Users/zara/Workspace/EmojiHub/androidApp/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
+path.0=classes.dex
+path.1=6/classes.dex
+path.2=0/classes.dex
+path.3=11/classes.dex
+path.4=classes2.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex
+renamed.2=classes3.dex
+renamed.3=classes4.dex
+renamed.4=classes5.dex
