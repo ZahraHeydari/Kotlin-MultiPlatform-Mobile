@@ -1,26 +1,27 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
+# Android Studio
+build/
+*/build
 /build
-/captures
-.externalNativeBuild
-.cxx
-
-# AndroidStudio 3
-.idea/caches/build_file_checksums.ser
-.idea/modules.xml
-
-# AndroidStudio Patch
-!/gradle/wrapper/gradle-wrapper.jar
-gen-external-apklibs
-output.json
+/*/build/
+/*/build/intermediates
+/*/local.properties
+/*/out
+/*/*/build
+/*/*/production
+captures/
+.navigation/
+*.ipr
+*~
+*.swp
+*.iml
+.idea
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/assetWizardSettings.xml
+.idea/gradle.xml
+.idea/jarRepositories.xml
+.idea/navEditor.xml
 
 # Directory-based project format
 .idea/
@@ -45,6 +46,45 @@ output.json
 .idea/sqlDataSources.xml
 .idea/dynamic.xml
 .idea/uiDesigner.xml
+
+local.properties
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/captures
+.externalNativeBuild
+.cxx
+
+.git/
+.gradle/
+gradle/
+gradlew
+gradlew.bat
+
+androidApp/build
+shared/build
+*.androidApp/build
+*.shared/build
+
+.bundle
+!.idea/codeStyles
+!.idea/inspectionProfiles
+
+# AndroidStudio 3
+.idea/caches/build_file_checksums.ser
+.idea/modules.xml
+
+.gradle
+
+# AndroidStudio Patch
+!/gradle/wrapper/gradle-wrapper.jar
+gen-external-apklibs
+output.json
 
 # virtual machine crash logs
 hs_err_pid*
@@ -104,3 +144,46 @@ Thumbs.db
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# IntelliJ files
+**/.idea/*
+!/.idea/vcs.xml
+!/.idea/codeStyles
+!/.idea/copyright
+
+# Maven files
+target
+
+# Modules for JS projects build
+node_modules
+
+# benchmarks.jar
+/benchmarks.jar
+
+### Xcode ###
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata/
+/*.gcno
+**/xcshareddata/WorkspaceSettings.xcsettings
+*.xcuserstate
+*.xcscheme
+*.xcworkspace
+xcuserdata/
+
+# CocoaPods
+Pods/
+
+## iOS App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Java class files
+*.class
+
+.vscode
+iosApp/iosApp.xcworkspace/*
+iosApp/iosApp.xcodeproj/*
+!iosApp/iosApp.xcodeproj/project.pbxproj
