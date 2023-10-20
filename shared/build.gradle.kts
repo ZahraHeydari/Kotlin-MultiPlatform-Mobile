@@ -25,15 +25,31 @@ kotlin {
         }
     }
 
+    val coroutineVersion = "1.7.3"
+    val viewModelVersion = "2.6.2"
+
     sourceSets {
         val commonMain by getting {
             dependencies {
                 //put your multiplatform dependencies here
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutineVersion")
             }
         }
         val commonTest by getting {
             dependencies {
                 implementation(kotlin("test"))
+            }
+        }
+        val androidMain by getting {
+            dependsOn(commonMain)
+            dependencies {
+                implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$viewModelVersion")
+            }
+        }
+        val iosMain by getting {
+            dependsOn(commonMain)
+            dependencies {
+                //iosMain dependencies
             }
         }
     }
