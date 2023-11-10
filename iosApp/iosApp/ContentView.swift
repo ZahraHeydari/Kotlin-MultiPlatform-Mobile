@@ -2,14 +2,15 @@ import SwiftUI
 import shared
 
 struct ContentView: View {
-    let emojiHubViewModel = EmojiHubViewModel()
+
+    @StateObject
+    var iOSEmojiHubViewModel = IOSEmojiHubViewModel()
 
 	var body: some View {
 	    Text(String("EmojiHub"))
         List {
-            ForEach(emojiHubViewModel.items, id: \.self) { item in
+            ForEach(iOSEmojiHubViewModel.items, id: \.self) { item in
                 Item(emojiItem: item)
-
             }
         }
 	}

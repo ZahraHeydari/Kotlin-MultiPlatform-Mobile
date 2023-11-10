@@ -4,6 +4,14 @@ A simple iOS and Android mobile application which has been implemented using Kot
 
 <br>
 <p align="center">
+  <img src="https://github.com/ZahraHeydari/EmojiHub/blob/main/shared.png" width="600"/>
+</p>
+<br>
+
+### Screenshots:
+
+<br>
+<p align="center">
   <img src="https://github.com/ZahraHeydari/EmojiHub/blob/main/app.png" width="600"/>
 </p>
 <br>
@@ -15,6 +23,7 @@ A simple iOS and Android mobile application which has been implemented using Kot
 - [Compose](https://developer.android.com/jetpack/compose/)
 - [Ktor](https://github.com/ktorio/ktor)
 - [Kotlinx.serialization](https://github.com/Kotlin/kotlinx.serialization)
+- [KMP-NativeCoroutines](https://github.com/rickclephas/KMP-NativeCoroutines)
 - [Koin](https://github.com/InsertKoinIO/koin)
 
 

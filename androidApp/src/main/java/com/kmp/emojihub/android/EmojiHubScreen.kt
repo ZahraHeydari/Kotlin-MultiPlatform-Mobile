@@ -10,15 +10,20 @@ import androidx.compose.material.Scaffold
 import androidx.compose.material.Text
 import androidx.compose.material.TopAppBar
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.kmp.emojihub.data.EmojiItem
 import com.kmp.emojihub.viewmodel.EmojiHubViewModel
 
 @Composable
 fun EmojiHubScreen() {
+
     val emojiHubViewModel: EmojiHubViewModel = viewModel()
+    val items by emojiHubViewModel.items.collectAsState()
 
     Scaffold(topBar = {
         TopAppBar(title = {
@@ -26,20 +31,16 @@ fun EmojiHubScreen() {
         })
     }, content = { paddingValues ->
         LazyColumn(modifier = Modifier.padding(paddingValues)) {
-            items(emojiHubViewModel.items.size) { index ->
-                Item(emojiHubViewModel, index)
+            items(items.size) { index ->
+                Item(items[index])
             }
         }
     })
 }
 
 @Composable
-private fun Item(
-    emojiHubViewModel: EmojiHubViewModel,
-    index: Int
-) {
+private fun Item(emojiItem: EmojiItem) {
     Column(Modifier.padding(end = 16.dp, start = 16.dp, top = 10.dp)) {
-        val emojiItem = emojiHubViewModel.items[index]
         Text(text = "Name: ${emojiItem.name}")
         Text(text = "Group: ${emojiItem.group}")
         Text(text = "Category: ${emojiItem.category}")
