@@ -13,7 +13,7 @@ import KMPNativeCoroutinesAsync
 @MainActor
 class IOSEmojiHubViewModel: ObservableObject {
 
-    private let emojiHubViewModel = EmojiHubViewModel()
+    private let emojiHubViewModel = EmojiHubViewModelHelper()
 
     @Published
     var items = Array<EmojiItem>()

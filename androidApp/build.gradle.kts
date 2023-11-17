@@ -47,4 +47,5 @@ dependencies {
     implementation("androidx.compose.material:material:1.5.4")
     implementation("androidx.activity:activity-compose:1.8.0")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
+    implementation("io.insert-koin:koin-androidx-compose:3.4.6")
 }

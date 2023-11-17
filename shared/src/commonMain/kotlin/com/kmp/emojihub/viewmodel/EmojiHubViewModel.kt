@@ -8,9 +8,7 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 
-class EmojiHubViewModel : SharedViewModel() {
-
-    private val githubRepository = EmojiHubRepository()
+class EmojiHubViewModel(private val repository :EmojiHubRepository) : SharedViewModel() {
 
     private val _items = MutableStateFlow<List<EmojiItem>>(listOf())
 
@@ -20,7 +18,7 @@ class EmojiHubViewModel : SharedViewModel() {
     init {
         sharedViewModelScope.launch {
             _items.update {
-                githubRepository.getEmojis()
+                repository.getEmojis()
             }
         }
     }

@@ -15,14 +15,14 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
-import androidx.lifecycle.viewmodel.compose.viewModel
 import com.kmp.emojihub.data.EmojiItem
 import com.kmp.emojihub.viewmodel.EmojiHubViewModel
+import org.koin.androidx.compose.koinViewModel
 
 @Composable
 fun EmojiHubScreen() {
 
-    val emojiHubViewModel: EmojiHubViewModel = viewModel()
+    val emojiHubViewModel: EmojiHubViewModel = koinViewModel()
     val items by emojiHubViewModel.items.collectAsState()
 
     Scaffold(topBar = {
